@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="GBK" ?>
+<pageTemplateDefs xmlns="http://xmlns.oracle.com/adf/faces/rich/pagetemplate">
+  <pagetemplate-jsp-ui-def>/gloalMenu.jspx</pagetemplate-jsp-ui-def>
+  <pagetemplate-jsp-ui-def>/templates/templateMain2.jspx</pagetemplate-jsp-ui-def>
+  <pagetemplate-jsp-ui-def>/templates/myTestTemplate.jspx</pagetemplate-jsp-ui-def>
+  <pagetemplate-jsp-ui-def>/templates/templateMain1.jspx</pagetemplate-jsp-ui-def>
+</pageTemplateDefs>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <f:view>
+        <af:document title="untitled1.jspx" id="d1">
+            <af:form id="f1">
+                <af:panelSplitter orientation="vertical" splitterPosition="50" positionedFromEnd="true" id="ps1">
+                    <f:facet name="first">
+                        <af:panelGridLayout id="pgl1">
+                            <af:gridRow height="50px" id="gr2">
+                                <af:gridCell halign="stretch" valign="stretch" columnSpan="3" id="gc4">
+                                    <!-- Header -->
+                                </af:gridCell>
+                            </af:gridRow>
+                            <af:gridRow height="100%" id="gr1">
+                                <af:gridCell width="100px" halign="stretch" valign="stretch" id="gc2">
+                                    <!-- Left -->
+                                </af:gridCell>
+                                <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc1">
+                                    <!-- Content -->
+                                </af:gridCell>
+                                <af:gridCell width="100px" halign="stretch" valign="stretch" id="gc3">
+                                    <!-- Right -->
+                                </af:gridCell>
+                            </af:gridRow>
+                        </af:panelGridLayout>
+                    </f:facet>
+                    <f:facet name="second">
+                        <!-- Footer -->
+                    </f:facet>
+                </af:panelSplitter>
+            </af:form>
+        </af:document>
+    </f:view>
+</jsp:root>

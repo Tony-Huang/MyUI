@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <af:pageTemplateDef var="attrs" definition="private">
+        <af:xmlContent>
+            <component xmlns="http://xmlns.oracle.com/adf/faces/rich/component">
+                <description/>
+                <display-name>templateMain2</display-name>
+                <facet>
+                    <facet-name>center1</facet-name>
+                </facet>
+                <facet>
+                    <facet-name>center2</facet-name>
+                </facet>
+            </component>
+        </af:xmlContent>
+        
+        
+    </af:pageTemplateDef>
+</jsp:root>

@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+                xmlns:f="http://java.sun.com/jsf/core">
+   
+            <af:toolbox id="t1" >
+                <af:menuBar id="mb1">
+                    <af:menu text="历史数据" id="m1">
+                        <af:commandMenuItem text="工艺品种查询机台" id="m6"/>
+                        <af:commandMenuItem text="不同班次时间对比" id="m7" />
+                        <af:commandMenuItem text="不同机台数据对比" id="m8" />
+                        <af:commandMenuItem text="机台时间段统计数据" id="m9" >
+                         <!--af:commandMenuItem text="断头数" id="cmi2"
+                                            binding="#{backingBeanScope.backing_templates_globalTools2.cmi2}"/>
+                         <af:commandMenuItem text="空锭数" id="cmi3"
+                                            binding="#{backingBeanScope.backing_templates_globalTools2.cmi3}"/>
+                         <af:commandMenuItem text="坏锭数" id="cmi4"
+                                            binding="#{backingBeanScope.backing_templates_globalTools2.cmi4}"/>
+                         <af:commandMenuItem text="滑锭数" id="cmi5"
+                                            binding="#{backingBeanScope.backing_templates_globalTools2.cmi5}"/>
+                        <af:commandMenuItem text="生产效率" id="cmi16"
+                                                binding="#{backingBeanScope.backing_templates_globalTools2.cmi16}"/-->
+                        </af:commandMenuItem>
+                        
+                        <af:commandMenuItem text="所有机台统计数据" id="m10"  />
+                        <af:commandMenuItem text="纱型段断头率对比" id="m11"   />
+                       
+                    </af:menu>
+                    <af:menu text="实时数据" id="m2" binding="#{backingBeanScope.backing_templates_globalTools2.m2}">
+                        <af:commandMenuItem text="锭子速度" id="cmi6"
+                                            binding="#{backingBeanScope.backing_templates_globalTools2.cmi6}"/>
+                        <af:commandMenuItem text="机台产量" id="cmi7"
+                                            binding="#{backingBeanScope.backing_templates_globalTools2.cmi7}"/>
+                        <af:commandMenuItem text="当前报警" id="cmi8"
+                                            binding="#{backingBeanScope.backing_templates_globalTools2.cmi8}"/>
+                        <af:commandMenuItem text="落纱时间与次数" id="cmi9"
+                                            binding="#{backingBeanScope.backing_templates_globalTools2.cmi9}"/>
+                    </af:menu>
+                    <af:menu text="用户管理" id="m3" binding="#{backingBeanScope.backing_templates_globalTools2.m3}">
+                        <af:commandMenuItem text="浏览用户" id="cmi12"
+                                            binding="#{backingBeanScope.backing_templates_globalTools2.cmi12}"/>
+                        <af:commandMenuItem text="修改用户" id="cmi10"
+                                            binding="#{backingBeanScope.backing_templates_globalTools2.cmi10}"/>
+                    </af:menu>
+                    <af:menu text="系统设定" id="m4" binding="#{backingBeanScope.backing_templates_globalTools2.m4}">
+                        <af:commandMenuItem text="显示屏IP地址" id="cmi11"
+                                            binding="#{backingBeanScope.backing_templates_globalTools2.cmi11}"/>
+                        <af:commandMenuItem text="数据采集频率" id="cmi13"
+                                            binding="#{backingBeanScope.backing_templates_globalTools2.cmi13}"/>
+                                            
+                                            
+                        <af:menu text="显示屏管理" id="m5" binding="#{backingBeanScope.backing_templates_globalTools2.m5}">
+                            <af:commandMenuItem text="编辑显示屏" id="cmi14"
+                                                binding="#{backingBeanScope.backing_templates_globalTools2.cmi14}"/>
+                            <af:commandMenuItem text="浏览显示屏" id="cmi15"
+                                                binding="#{backingBeanScope.backing_templates_globalTools2.cmi15}"/>
+                        </af:menu>
+                    </af:menu>
+                </af:menuBar>
+            </af:toolbox>
+       
+    <!--oracle-jdev-comment:auto-binding-backing-bean-name:backing_templates_globalTools2-->
+</ui:composition>

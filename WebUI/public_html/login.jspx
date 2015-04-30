@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <f:view>
+        <af:document title="login" id="d1" binding="#{backingBeanScope.backing_login.d1}">
+            <af:form id="f1" binding="#{backingBeanScope.backing_login.f1}">
+                <af:panelGridLayout id="pgl1" binding="#{backingBeanScope.backing_login.pgl1}">
+                    <af:gridRow height="60px" id="gr1" binding="#{backingBeanScope.backing_login.gr1}">
+                        <af:gridCell halign="stretch" valign="stretch" columnSpan="3" id="gc2"
+                                     binding="#{backingBeanScope.backing_login.gc2}">
+                            <!-- Header -->
+                            <af:decorativeBox id="db1" binding="#{backingBeanScope.backing_login.db1}" theme="dark"
+                                              inlineStyle="background-color:ThreeDShadow;" topHeight="60px">
+                               
+                                <f:facet name="center">
+                                    <af:panelBorderLayout id="pbl1" binding="#{backingBeanScope.backing_login.pbl1}">
+                                        <f:facet name="start">
+                                            <af:outputLabel value="start" id="ol3"
+                                                            binding="#{backingBeanScope.backing_login.ol3}"/>
+                                            <af:spacer width="20" height="0" id="s6"
+                                                       binding="#{backingBeanScope.backing_login.s6}"/>
+                                            <af:outputLabel value="end" id="ol4"
+                                                            binding="#{backingBeanScope.backing_login.ol4}"/>
+                                        </f:facet>
+                                        
+                                          <f:facet name="end">
+                                            <af:outputLabel value="end1" />
+                                            <af:spacer width="20" height="0"
+                                                       binding="#{backingBeanScope.backing_login.s6}"/>
+                                            <af:outputLabel value="end2" />
+                                        </f:facet>
+                                        
+                                        <!--f:facet name="bottom">
+                                            <af:outputLabel value="bottom" id="ol6"
+                                                            binding="#{backingBeanScope.backing_login.ol6}"/>
+                                        </f:facet>
+                                        <f:facet name="end">
+                                            <af:outputLabel value="end" id="ol4"
+                                                            binding="#{backingBeanScope.backing_login.ol4}"/>
+                                        </f:facet>
+                                        <f:facet name="top">
+                                            <af:outputLabel value="top" id="ol5"
+                                                            binding="#{backingBeanScope.backing_login.ol5}"/>
+                                        </f:facet-->
+                                    </af:panelBorderLayout>
+                                  
+                                </f:facet>
+                            </af:decorativeBox>
+                            <af:outputLabel value="welcome" id="ol1"
+                                            binding="#{backingBeanScope.backing_login.ol1}"/>
+                        </af:gridCell>
+                    </af:gridRow>
+                    <af:gridRow height="100%" id="gr2" binding="#{backingBeanScope.backing_login.gr2}">
+                        <af:gridCell width="30px" halign="stretch" valign="stretch" id="gc4"
+                                     binding="#{backingBeanScope.backing_login.gc4}">
+                            <!-- Left -->
+                              <af:decorativeBox id="db-left" binding="#{backingBeanScope.backing_login.db1}"
+                                                theme="contentBody"
+                                              inlineStyle="background-color:ThreeDShadow;" dimensionsFrom="auto"
+                                                topHeight="100%">
+                               
+                                <f:facet name="top">
+                                    <af:panelBorderLayout id="pbl1-left" binding="#{backingBeanScope.backing_login.pbl1}"
+                                                          inlineStyle="background-color:ThreeDShadow;">
+                                        <!--af:spacer width="10" height="10" id="s6"
+                                                   binding="#{backingBeanScope.backing_login.s6}"/-->
+                                      <f:facet name="start">
+                                            <af:outputLabel value="" id="ol3-left"
+                                                            binding="#{backingBeanScope.backing_login.ol3}"/>
+                                      </f:facet>
+                                        <!--f:facet name="top">
+                                            <af:outputLabel value="top" id="ol5-left"
+                                                            binding="#{backingBeanScope.backing_login.ol5}"/>
+                                        </f:facet>
+                                        <f:facet name="bottom">
+                                            <af:outputLabel value="bottom" id="ol6-left"
+                                                            binding="#{backingBeanScope.backing_login.ol6}"/>
+                                        </f:facet>
+                                        
+                                      
+                                       
+                                        <f:facet name="end">
+                                            <af:outputLabel value="end" id="ol4-left"
+                                                            binding="#{backingBeanScope.backing_login.ol4}"/>
+                                        </f:facet-->
+                                      
+                                    </af:panelBorderLayout>
+                                  
+                                </f:facet>
+                            </af:decorativeBox>
+                            
+                        </af:gridCell>
+                        <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc3"
+                                     binding="#{backingBeanScope.backing_login.gc3}">
+                            <!-- Content -->
+                            <af:panelFormLayout id="pfl1" binding="#{backingBeanScope.backing_login.pfl1}"
+                                                inlineStyle="background-color:Teal;">
+                                    <af:spacer width="10" height="50" id="s2"
+                                           binding="#{backingBeanScope.backing_login.s2}"/>
+                               
+                                  <af:inputText label="用户名" id="it1"
+                                                    binding="#{backingBeanScope.backing_login.it1}" columns="30"/>
+                                    <af:spacer width="10" height="10" id="s3"
+                                           binding="#{backingBeanScope.backing_login.s3}"/>
+                                <af:inputText label="密码" id="it2" binding="#{backingBeanScope.backing_login.it2}"
+                                              secret="true" columns="30"/>
+                               
+                                <f:facet name="footer">
+                                  
+                                    <af:panelGroupLayout id="pgl2" binding="#{backingBeanScope.backing_login.pgl2}"
+                                                         layout="horizontal">
+                                                           <af:spacer width="80" height="80" id="s5"
+                                               binding="#{backingBeanScope.backing_login.s5}"/>
+                                        <af:button text="确认" id="b2"
+                                                   binding="#{backingBeanScope.backing_login.b2}"
+                                                   action="loginSuccess"/>
+                                        <af:spacer width="20" height="30" id="s4"
+                                                   binding="#{backingBeanScope.backing_login.s4}"/>
+                                        <af:button text="取消" id="b3"
+                                                   binding="#{backingBeanScope.backing_login.b3}"/>
+                                    </af:panelGroupLayout>
+                                </f:facet>
+                            </af:panelFormLayout>
+                        </af:gridCell>
+                        <af:gridCell width="30px" halign="stretch" valign="stretch" id="gc1"
+                                     binding="#{backingBeanScope.backing_login.gc1}">
+                            <!-- Right -->
+                              <af:decorativeBox id="db-right" binding="#{backingBeanScope.backing_login.db1}" theme="dark"
+                                              inlineStyle="background-color:ThreeDShadow;" topHeight="100%">
+                               
+                                <f:facet name="top">
+                                    <af:panelBorderLayout id="pbl1-right" binding="#{backingBeanScope.backing_login.pbl1}">
+                                        <f:facet name="start">
+                                            <!--af:outputLabel value="start" id="ol3-right"
+                                                            binding="#{backingBeanScope.backing_login.ol3}"/-->
+                                        </f:facet>
+                                        <!--f:facet name="bottom">
+                                            <af:outputLabel value="bottom" id="ol6-right"
+                                                            binding="#{backingBeanScope.backing_login.ol6}"/>
+                                        </f:facet>
+                                        <f:facet name="end">
+                                            <af:outputLabel value="end" id="ol4-right"
+                                                            binding="#{backingBeanScope.backing_login.ol4}"/>
+                                        </f:facet>
+                                        <f:facet name="top">
+                                            <af:outputLabel value="top" id="ol5-right"
+                                                            binding="#{backingBeanScope.backing_login.ol5}"/>
+                                        </f:facet-->
+                                    </af:panelBorderLayout>
+                                  
+                                </f:facet>
+                            </af:decorativeBox>
+                            
+                        </af:gridCell>
+                    </af:gridRow>
+                    <af:gridRow height="30px" id="gr3" binding="#{backingBeanScope.backing_login.gr3}">
+                        <af:gridCell halign="stretch" valign="stretch" columnSpan="3" id="gc5"
+                                     binding="#{backingBeanScope.backing_login.gc5}">
+                            <!-- Footer -->
+                             <af:decorativeBox id="db-footer" binding="#{backingBeanScope.backing_login.db1}" theme="dark"
+                                              inlineStyle="background-color:ThreeDShadow;" topHeight="60px">
+                               
+                                <f:facet name="top">
+                                    <af:panelBorderLayout id="pbl1-footer" binding="#{backingBeanScope.backing_login.pbl1}">
+                                        <f:facet name="start">
+                                            <!--af:outputLabel value="start" id="ol3-footer"
+                                                            binding="#{backingBeanScope.backing_login.ol3}"/-->
+                                        </f:facet>
+                                        <!--f:facet name="bottom">
+                                            <af:outputLabel value="bottom" id="ol6-footer"
+                                                            binding="#{backingBeanScope.backing_login.ol6}"/>
+                                        </f:facet>
+                                        <f:facet name="end">
+                                            <af:outputLabel value="end" id="ol4-footer"
+                                                            binding="#{backingBeanScope.backing_login.ol4}"/>
+                                        </f:facet>
+                                        <f:facet name="top">
+                                            <af:outputLabel value="top" id="ol5-footer"
+                                                            binding="#{backingBeanScope.backing_login.ol5}"/>
+                                        </f:facet-->
+                                    </af:panelBorderLayout>
+                                  
+                                </f:facet>
+                            </af:decorativeBox>
+                            
+                        </af:gridCell>
+                    </af:gridRow>
+                </af:panelGridLayout>
+            </af:form>
+        </af:document>
+    </f:view>
+    <!--oracle-jdev-comment:auto-binding-backing-bean-name:backing_login-->
+</jsp:root>

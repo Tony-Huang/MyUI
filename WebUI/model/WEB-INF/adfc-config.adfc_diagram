@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <View
+      id="View5">
+      <property
+         name="activityId">logintry</property>
+      <property
+         name="page">/logintry.jspx</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>logintry&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">157.69531</property>
+      <property
+         name="x">59.5</property>
+   </View>
+   <View
+      id="View6">
+      <property
+         name="activityId">main</property>
+      <property
+         name="page">/main.jspx</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>main&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">157.99414</property>
+      <property
+         name="x">226.5</property>
+   </View>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase7"
+      from="View5"
+      to="View6">
+      <property
+         name="fromOutcome">login</property>
+      <property
+         name="sdm:polyPoints">R50,100.5,157.34473,185.5,157.64355,L50</property>
+   </ControlFlowCase>
+   <View
+      id="View8">
+      <property
+         name="activityId">main2</property>
+      <property
+         name="page">/main2.jspx</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>main2&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">243.79883</property>
+      <property
+         name="x">406.5</property>
+   </View>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase9"
+      from="View6"
+      to="View8">
+      <property
+         name="fromOutcome">gongYiPinZhongChajiTai</property>
+      <property
+         name="sdm:polyPoints">R50,267.5,157.64355,365.5,243.44824,L50</property>
+   </ControlFlowCase>
+</SDM>

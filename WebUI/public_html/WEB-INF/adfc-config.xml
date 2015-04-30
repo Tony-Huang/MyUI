@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="GBK" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <view id="logintry">
+    <page>/logintry.jspx</page>
+  </view>
+  <view id="main">
+    <page>/main.jspx</page>
+  </view>
+  <view id="main2">
+    <page>/main2.jspx</page>
+  </view>
+  <control-flow-rule id="__1">
+    <from-activity-id>logintry</from-activity-id>
+    <control-flow-case id="__2">
+      <from-outcome>login</from-outcome>
+      <to-activity-id>main</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
+  <control-flow-rule id="__14">
+    <from-activity-id>main</from-activity-id>
+    <control-flow-case id="__15">
+      <from-outcome>gongYiPinZhongChajiTai</from-outcome>
+      <to-activity-id>main2</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
+  <managed-bean id="__3">
+    <managed-bean-name>backing_login</managed-bean-name>
+    <managed-bean-class>com.hdp.smp.front.ui.backing.Login</managed-bean-class>
+    <managed-bean-scope>backingBean</managed-bean-scope>
+    <!--oracle-jdev-comment:managed-bean-jsp-link:1login.jspx-->
+  </managed-bean>
+  <managed-bean id="__4">
+    <managed-bean-name>backing_main</managed-bean-name>
+    <managed-bean-class>com.hdp.smp.front.ui.backing.Main</managed-bean-class>
+    <managed-bean-scope>backingBean</managed-bean-scope>
+    <!--oracle-jdev-comment:managed-bean-jsp-link:1main.jspx-->
+  </managed-bean>
+  <managed-bean id="__5">
+    <managed-bean-name>backing_test1</managed-bean-name>
+    <managed-bean-class>com.hdp.smp.front.ui.backing.Test1</managed-bean-class>
+    <managed-bean-scope>backingBean</managed-bean-scope>
+    <!--oracle-jdev-comment:managed-bean-jsp-link:1test1.jsf-->
+  </managed-bean>
+  <managed-bean id="__6">
+    <managed-bean-name>backing_login2</managed-bean-name>
+    <managed-bean-class>com.hdp.smp.front.ui.backing.Login2</managed-bean-class>
+    <managed-bean-scope>backingBean</managed-bean-scope>
+    <!--oracle-jdev-comment:managed-bean-jsp-link:1login2.jspx-->
+  </managed-bean>
+  <managed-bean id="__7">
+    <managed-bean-name>backing_loginGood</managed-bean-name>
+    <managed-bean-class>com.hdp.smp.front.ui.backing.LoginGood</managed-bean-class>
+    <managed-bean-scope>backingBean</managed-bean-scope>
+    <!--oracle-jdev-comment:managed-bean-jsp-link:1loginGood.jspx-->
+  </managed-bean>
+  <managed-bean id="__8">
+    <managed-bean-name>backing_includes_aboutPopup</managed-bean-name>
+    <managed-bean-class>com.hdp.smp.front.ui.backing.includes.AboutPopup</managed-bean-class>
+    <managed-bean-scope>backingBean</managed-bean-scope>
+    <!--oracle-jdev-comment:managed-bean-jsp-link:1includes/aboutPopup.jspx-->
+  </managed-bean>
+  <managed-bean id="__9">
+    <managed-bean-name>backing_logintry</managed-bean-name>
+    <managed-bean-class>com.hdp.smp.front.ui.backing.Logintry</managed-bean-class>
+    <managed-bean-scope>backingBean</managed-bean-scope>
+    <!--oracle-jdev-comment:managed-bean-jsp-link:1logintry.jspx-->
+  </managed-bean>
+  <managed-bean id="__10">
+    <managed-bean-name>backing_templates_globalTools</managed-bean-name>
+    <managed-bean-class>com.hdp.smp.front.ui.backing.templates.GlobalTools</managed-bean-class>
+    <managed-bean-scope>backingBean</managed-bean-scope>
+    <!--oracle-jdev-comment:managed-bean-jsp-link:1templates/globalTools.jsf-->
+  </managed-bean>
+  <managed-bean id="__11">
+    <managed-bean-name>backing_templates_globalTools2</managed-bean-name>
+    <managed-bean-class>com.hdp.smp.front.ui.backing.templates.GlobalTools2</managed-bean-class>
+    <managed-bean-scope>backingBean</managed-bean-scope>
+    <!--oracle-jdev-comment:managed-bean-jsp-link:1templates/globalTools.jsff-->
+  </managed-bean>
+  <managed-bean id="__12">
+    <managed-bean-name>backing_main2</managed-bean-name>
+    <managed-bean-class>com.hdp.smp.front.ui.backing.Main2</managed-bean-class>
+    <managed-bean-scope>backingBean</managed-bean-scope>
+    <!--oracle-jdev-comment:managed-bean-jsp-link:1main2.jspx-->
+  </managed-bean>
+  <managed-bean id="__13">
+    <managed-bean-name>globalMenu</managed-bean-name>
+    <managed-bean-class>com.hdp.smp.front.ui.backing.templates.GlobalMenu</managed-bean-class>
+    <managed-bean-scope>backingBean</managed-bean-scope>
+    <!--oracle-jdev-comment:managed-bean-jsp-link:1templates/globalMenu.jsff-->
+  </managed-bean>
+  <managed-bean id="__16">
+    <managed-bean-name>GlobalMenuMBean</managed-bean-name>
+    <managed-bean-class>com.hdp.smp.front.ui.GlobalMenuMBean</managed-bean-class>
+    <managed-bean-scope>request</managed-bean-scope>
+  </managed-bean>
+</adfc-config>

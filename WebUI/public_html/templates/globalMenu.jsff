@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+                xmlns:f="http://java.sun.com/jsf/core">
+    <!--oracle-jdev-comment:auto-binding-backing-bean-name:globalMenu-->
+    
+    
+    <af:panelGroupLayout id="pgl1" binding="#{backingBeanScope.globalMenu.pgl1}">
+        <!--af:facetRef facetName="customMenu" binding="#{backingBeanScope.globalMenu.fr1}" id="fr1"/-->
+        <af:panelStretchLayout id="psl1" binding="#{backingBeanScope.globalMenu.psl1}">
+            <f:facet name="center">
+                <af:panelGroupLayout id="pgl2" binding="#{backingBeanScope.globalMenu.pgl2}" layout="vertical">
+                    <af:toolbox id="t1" binding="#{backingBeanScope.globalMenu.t1}">
+                        <af:menuBar id="mb1" binding="#{backingBeanScope.globalMenu.mb1}">
+                            <af:menu text="menu 3" id="m3" binding="#{backingBeanScope.globalMenu.m3}"/>
+                            <af:menu text="menu 4" id="m4" binding="#{backingBeanScope.globalMenu.m4}"/>
+                            <af:menu text="menu 2" id="m2" binding="#{backingBeanScope.globalMenu.m2}"/>
+                            <af:menu text="menu 1" id="m1" binding="#{backingBeanScope.globalMenu.m1}"/>
+                        </af:menuBar>
+                    </af:toolbox>
+                </af:panelGroupLayout>
+            </f:facet>
+            <!--f:facet name="bottom"/>
+        <f:facet name="start"/>
+        <f:facet name="end"/>
+        <f:facet name="top"/-->
+        </af:panelStretchLayout>
+        <!--af:resource type="css">css</af:resource-->
+    </af:panelGroupLayout>
+</ui:composition>

@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <f:view>
+        <af:document title="main2.jspx" id="d1" binding="#{backingBeanScope.backing_main2.d1}">
+           
+            
+              <af:pageTemplate viewId="/templates/templateMain1.jspx" id="pt1">
+                <f:facet name="center1">
+                    <af:panelStretchLayout id="psl1" binding="#{backingBeanScope.backing_main2.psl1}">
+                        <f:facet name="bottom"/>
+                        <f:facet name="center">
+                        
+                        
+                         <af:panelGroupLayout id="pgl2">
+                         <af:quickQuery label="Search" id="qq1" binding="#{backingBeanScope.backing_main2.qq1}"
+                                       attributeChangeListener="#{backingBeanScope.backing_main2.c1_attributeChangeListener}"
+                                       queryListener="#{backingBeanScope.backing_main2.processQuery}">
+                        <af:inputText label="Label 1" id="it1" simple="true" binding="#{backingBeanScope.backing_main2.it1}"
+                                      value="#{backingBeanScope.backing_main2.userQueryInput}"/>
+                        <f:facet name="criteriaItems">
+                            <af:selectOneChoice label="选择"
+                                                valueChangeListener="#{backingBeanScope.backing_main2.valueChanged}"
+                                                id="soc1" binding="#{backingBeanScope.backing_main2.soc1}"
+                                                autoSubmit="true" simple="true">
+                                <af:selectItem label="起始时间" id="si1" binding="#{backingBeanScope.backing_main2.si1}"/>
+                                <af:selectItem label="结束时间" id="si2" binding="#{backingBeanScope.backing_main2.si2}"/>
+                                <af:selectItem label="工艺品种" id="si3" binding="#{backingBeanScope.backing_main2.si3}"/>
+                            </af:selectOneChoice>
+                        </f:facet>
+                            <f:facet name="end">
+                                <af:link text="Advanced" visible="false" id="l1"
+                                         binding="#{backingBeanScope.backing_main2.l1}"/>
+                            </f:facet>
+                       
+                    </af:quickQuery>
+                    
+                     <af:table var="row" rowBandingInterval="0" id="t3"
+                                  binding="#{backingBeanScope.backing_main2.t3}">
+                            <af:column sortable="false" headerText="col1" id="c19">
+                                <af:outputText value="#{row.col1}" id="ot19"/>
+                            </af:column>
+                            <af:column sortable="false" headerText="col2" id="c20">
+                                <af:outputText value="#{row.col2}" id="ot20"/>
+                            </af:column>
+                            <af:column sortable="false" headerText="col3" id="c21">
+                                <af:outputText value="#{row.col3}" id="ot21"/>
+                            </af:column>
+                            <af:column sortable="false" headerText="col4" id="c22">
+                                <af:outputText value="#{row.col4}" id="ot22"/>
+                            </af:column>
+                            <af:column sortable="false" headerText="col5" id="c23">
+                                <af:outputText value="#{row.col5}" id="ot23"/>
+                            </af:column>
+                        </af:table>
+                    
+                     </af:panelGroupLayout>
+                    
+                        </f:facet>
+                        <f:facet name="start"/>
+                        <f:facet name="end"/>
+                        <f:facet name="top"/>
+                    </af:panelStretchLayout>
+                    <!--af:table var="row" rowBandingInterval="0" id="t2" binding="#{backingBeanScope.backing_main2.t2}">
+                        <af:column sortable="false" headerText="落纱时间" id="c10">
+                            <af:outputText value="#{row.col1}" id="ot10"/>
+                        </af:column>
+                        <af:column sortable="false" headerText="发生时间" id="c11">
+                            <af:outputText value="#{row.col2}" id="ot11"/>
+                        </af:column>
+                        <af:column sortable="false" headerText="工艺品种" id="c12">
+                            <af:outputText value="#{row.col3}" id="ot12"/>
+                        </af:column>
+                        <af:column sortable="false" headerText="机台" id="c13">
+                            <af:outputText value="#{row.col4}" id="ot13"/>
+                        </af:column>
+                        <af:column sortable="false" headerText="能耗" id="c14">
+                            <af:outputText value="#{row.col5}" id="ot14"/>
+                        </af:column>
+                        <af:column sortable="false" headerText="断头率" id="c15">
+                            <af:outputText value="#{row.col6}" id="ot15"/>
+                        </af:column>
+                        <af:column sortable="false" headerText="空锭数" id="c16">
+                            <af:outputText value="#{row.col7}" id="ot16"/>
+                        </af:column>
+                        <af:column sortable="false" headerText="坏锭数" id="c17">
+                            <af:outputText value="#{row.col8}" id="ot17"/>
+                        </af:column>
+                        <af:column sortable="false" headerText="滑锭数" id="c18">
+                            <af:outputText value="#{row.col1}" id="ot18"/>
+                        </af:column>
+                    </af:table-->
+                    
+                    <!--
+                    <af:panelCollection id="pc1" binding="#{backingBeanScope.backing_main2.pc1}">
+                        <f:facet name="menus"/>
+                        <f:facet name="toolbar"/>
+                        <f:facet name="statusbar"/>
+                        
+                        
+                        <af:table var="row" rowBandingInterval="0" id="t1"
+                                  binding="#{backingBeanScope.backing_main2.t1}">
+                            <af:column sortable="false" headerText="断头率" id="c1"
+                                       attributeChangeListener="#{backingBeanScope.backing_main2.c1_attributeChangeListener}">
+                                <af:outputText value="#{row.col1}" id="ot1"/>
+                            </af:column>
+                            <af:column sortable="false" headerText="空锭数" id="c2">
+                                <af:outputText value="#{row.col2}" id="ot2"/>
+                            </af:column>
+                            <af:column sortable="false" headerText="滑锭数" id="c3">
+                                <af:outputText value="#{row.col3}" id="ot3"/>
+                            </af:column>
+                            <af:column sortable="false" headerText="产能" id="c4">
+                                <af:outputText value="#{row.col4}" id="ot4"/>
+                            </af:column>
+                            <af:column sortable="false" headerText="功耗" id="c5">
+                                <af:outputText value="#{row.col5}" id="ot5"/>
+                            </af:column>
+                            <af:column sortable="false" headerText="机台" id="c6">
+                                <af:outputText value="#{row.col6}" id="ot6"/>
+                            </af:column>
+                            <af:column sortable="false" headerText="落纱时间" id="c7">
+                                <af:outputText value="#{row.col1}" id="ot7"/>
+                            </af:column>
+                            <af:column sortable="false" headerText="千定时断头率" id="c8">
+                                <af:outputText value="#{row.col2}" id="ot8"/>
+                            </af:column>
+                            <af:column sortable="false" headerText="班次" id="c9">
+                                <af:outputText value="#{row.col3}" id="ot9"/>
+                            </af:column>
+                        </af:table>
+                    </af:panelCollection>
+               
+               -->
+               
+                </f:facet>
+                <f:facet name="center2"/>
+            </af:pageTemplate>
+        </af:document>
+    </f:view>
+    <!--oracle-jdev-comment:auto-binding-backing-bean-name:backing_main2-->
+</jsp:root>

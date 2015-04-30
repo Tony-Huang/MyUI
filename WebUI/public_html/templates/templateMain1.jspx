@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+          xmlns:f="http://java.sun.com/jsf/core" xmlns:c="http://java.sun.com/jsp/jstl/core">
+    <c:set var="webuiBundle" value="#{adfBundle['com.hdp.smp.front.ui.UIBundle_CN']}"/>
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <af:pageTemplateDef var="attrs" definition="private">
+        <af:xmlContent>
+            <component xmlns="http://xmlns.oracle.com/adf/faces/rich/component">
+                <description/>
+                <display-name>templateMain1</display-name>
+                <facet>
+                    <facet-name>center1</facet-name>
+                </facet>
+                <facet>
+                    <facet-name>center2</facet-name>
+                </facet>
+              
+             
+                <attribute>
+                    <attribute-name>logoImagePath</attribute-name>
+                    <attribute-class>java.lang.String</attribute-class>
+                </attribute>
+                <attribute>
+                    <attribute-name>logoSmallImagePath</attribute-name>
+                    <attribute-class>java.lang.String</attribute-class>
+                </attribute>
+                <attribute>
+                    <attribute-name>logoStyleClass</attribute-name>
+                    <attribute-class>java.lang.String</attribute-class>
+                </attribute>
+                <attribute>
+                    <attribute-name>logoShortDesc</attribute-name>
+                    <attribute-class>java.lang.String</attribute-class>
+                </attribute>
+            
+            </component>
+        </af:xmlContent>
+     
+     
+       <af:form id="f1" >
+                <af:panelSplitter orientation="vertical" splitterPosition="50" id="ps1"
+                                >
+                    <!--f:facet name="first"/-->
+                    
+         <f:facet name="first">
+          <af:panelGroupLayout layout="scroll" id="ptpgl1" styleClass="AFBrandingBar"
+                               inlineStyle="background-color:ThreeDDarkShadow;">
+            <f:subview id="about">
+              <jsp:include page="/includes/aboutPopup.jspx"/>
+            </f:subview>
+            <af:panelBorderLayout id="ptpbl1">
+              <f:facet name="start">
+                <af:panelGroupLayout styleClass="AFBrandingBarItem" id="ptpgl2">
+                  <af:link id="logoLink" action="index" icon="/igms/logo-small.jpg" styleClass="AFBrandingLogo"
+                           shortDesc="#{webuiBundle['product.logo.shortDesc']}"/>
+                </af:panelGroupLayout>
+              </f:facet>
+              <f:facet name="innerStart">
+                <af:panelGroupLayout styleClass="AFBrandingBarItem"
+                                     id="ptpgl3" layout="horizontal">
+                 <af:spacer width="10" id="pts-prodname"/>
+                  <af:outputText styleClass="AFBrandingBarTitle"
+                                 id="ptot1" value="#{webuiBundle['product.name']}"/>
+                </af:panelGroupLayout>
+              </f:facet>
+              <af:panelBorderLayout id="ptpbl2">
+                <af:spacer inlineStyle="max-width: 100%;" id="mysp-top-sp001" styleClass="AFStretchWidth"/>
+                <f:facet name="end">
+                  <af:panelGroupLayout layout="vertical" styleClass="AFBrandingBarItem"
+                                       id="ptpgl4">
+                    <af:navigationPane hint="bar" id="ptnp1">
+                    
+                     <!--af:commandNavigationItem text="Accessibility"
+                                                shortDesc="Edit accessibility preferences"
+                                                id="ptcni0"
+                                                action="#{accessibility.goToPreferences}"
+                                                rendered="#{attrs.mode != 'accessibility'}"/-->
+                    
+                      <!--af:commandNavigationItem text="Accessibility"
+                                                shortDesc="Edit accessibility preferences"
+                                                id="ptcni0"
+                                               /-->
+                                                
+                                                
+                                                
+                      <af:commandNavigationItem text="#{webuiBundle['product.about.name']}"
+                                                shortDesc="View version information about the software "
+                                                id="ptcni1" styleClass="AFBrandingBarTitle">
+                        <af:showPopupBehavior popupId="::about:about"/>
+                      </af:commandNavigationItem>
+                      <!--af:commandNavigationItem text="Home" immediate="true"
+                                                shortDesc="Learn mbout SMP"
+                                                id="ptcni2" partialSubmit="true" action="#{aboutBean.goHome}"/-->
+                    </af:navigationPane>
+                  </af:panelGroupLayout>
+                </f:facet>
+              </af:panelBorderLayout>
+              <f:facet name="innerEnd">
+                <af:spacer width="4" id="pts2"/>
+              </f:facet>
+              <f:facet name="end">
+                <af:panelGroupLayout layout="horizontal" styleClass="AFBrandingBarItem"
+                                     id="ptpgl5">
+                  <af:statusIndicator id="ptsi1"/>
+                </af:panelGroupLayout>
+              </f:facet>
+            </af:panelBorderLayout>
+          </af:panelGroupLayout>
+        </f:facet>
+        
+                                 
+        <f:facet name="second">
+          <af:panelSplitter orientation="vertical" positionedFromEnd="true" splitterPosition="79" id="ps2"
+                                         >
+           <f:facet name="first">
+            <af:decorativeBox topHeight="10px"
+                                id="ptdb-bodyCenter" dimensionsFrom="auto" theme="contentBody">
+                                
+              <f:facet name="center">
+                <af:decorativeBox topHeight="10px"   id="ptdbbody-center" dimensionsFrom="auto">
+                         <f:facet name="center">
+                        
+                        <af:panelStretchLayout startWidth="10px" id="ptpsl2"
+                                                     dimensionsFrom="auto" topHeight="30px">
+                                <f:facet name="top">
+                                  <!--af:spacer id="pts6"/-->
+                                 <!--f:subview id="sub-gTools">
+                                     <jsp:include page="/templates/globalTools.jsff"/>
+                                 </f:subview-->
+                                 
+                                   <af:toolbox id="t1" >
+                <af:menuBar id="mb1">
+                    <af:menu text="历史数据" id="m1">
+                        <af:commandMenuItem text="工艺品种查询机台" id="m6"
+                                            action="#{GlobalMenuMBean.goGongYiPingZhongChaJiTai}"/>
+                        <af:commandMenuItem text="不同班次时间对比" id="m7" />
+                        <af:commandMenuItem text="不同机台数据对比" id="m8" />
+                        <af:commandMenuItem text="机台时间段统计数据" id="m9" >
+                         <!--af:commandMenuItem text="断头数" id="cmi2"
+                                            binding="#{backingBeanScope.backing_templates_globalTools2.cmi2}"/>
+                         <af:commandMenuItem text="空锭数" id="cmi3"
+                                            binding="#{backingBeanScope.backing_templates_globalTools2.cmi3}"/>
+                         <af:commandMenuItem text="坏锭数" id="cmi4"
+                                            binding="#{backingBeanScope.backing_templates_globalTools2.cmi4}"/>
+                         <af:commandMenuItem text="滑锭数" id="cmi5"
+                                            binding="#{backingBeanScope.backing_templates_globalTools2.cmi5}"/>
+                        <af:commandMenuItem text="生产效率" id="cmi16"
+                                                binding="#{backingBeanScope.backing_templates_globalTools2.cmi16}"/-->
+                        </af:commandMenuItem>
+                        
+                        <af:commandMenuItem text="所有机台统计数据" id="m10"  />
+                        <af:commandMenuItem text="纱型段断头率对比" id="m11"   />
+                       
+                    </af:menu>
+                    <af:menu text="实时数据" id="m2" binding="#{backingBeanScope.backing_templates_globalTools2.m2}">
+                        <af:commandMenuItem text="锭子速度" id="cmi6"
+                                            binding="#{backingBeanScope.backing_templates_globalTools2.cmi6}"/>
+                        <af:commandMenuItem text="机台产量" id="cmi7"
+                                            binding="#{backingBeanScope.backing_templates_globalTools2.cmi7}"/>
+                        <af:commandMenuItem text="当前报警" id="cmi8"
+                                            binding="#{backingBeanScope.backing_templates_globalTools2.cmi8}"/>
+                        <af:commandMenuItem text="落纱时间与次数" id="cmi9"
+                                            binding="#{backingBeanScope.backing_templates_globalTools2.cmi9}"/>
+                    </af:menu>
+                    <af:menu text="用户管理" id="m3" binding="#{backingBeanScope.backing_templates_globalTools2.m3}">
+                        <af:commandMenuItem text="浏览用户" id="cmi12"
+                                            binding="#{backingBeanScope.backing_templates_globalTools2.cmi12}"/>
+                        <af:commandMenuItem text="修改用户" id="cmi10"
+                                            binding="#{backingBeanScope.backing_templates_globalTools2.cmi10}"/>
+                    </af:menu>
+                    <af:menu text="系统设定" id="m4" binding="#{backingBeanScope.backing_templates_globalTools2.m4}">
+                        <af:commandMenuItem text="显示屏IP地址" id="cmi11"
+                                            binding="#{backingBeanScope.backing_templates_globalTools2.cmi11}"/>
+                        <af:commandMenuItem text="数据采集频率" id="cmi13"
+                                            binding="#{backingBeanScope.backing_templates_globalTools2.cmi13}"/>
+                                            
+                                            
+                        <af:menu text="显示屏管理" id="m5" binding="#{backingBeanScope.backing_templates_globalTools2.m5}">
+                            <af:commandMenuItem text="编辑显示屏" id="cmi14"
+                                                binding="#{backingBeanScope.backing_templates_globalTools2.cmi14}"/>
+                            <af:commandMenuItem text="浏览显示屏" id="cmi15"
+                                                binding="#{backingBeanScope.backing_templates_globalTools2.cmi15}"/>
+                        </af:menu>
+                    </af:menu>
+                </af:menuBar>
+            </af:toolbox>
+                                 
+                                </f:facet>
+                                
+                                
+                                <f:facet name="center">
+                                  <af:decorativeBox theme="default" id="ptdb2"
+                                                    centerLandmark="main" dimensionsFrom="parent">
+                                                    
+                                        
+                                                    
+                                    <f:facet name="center">
+                                    
+                                     <af:facetRef facetName="center1"/>
+                               
+                                
+                              
+                                    </f:facet>
+                            </af:decorativeBox>
+                            </f:facet>
+                           </af:panelStretchLayout>
+                         </f:facet>
+
+                </af:decorativeBox>
+              </f:facet>
+             
+              
+              
+              
+              
+            </af:decorativeBox>
+           </f:facet>
+           
+           
+           <f:facet name="second">
+                 <af:facetRef facetName="center2"/>
+           </f:facet>
+           
+           </af:panelSplitter>
+        </f:facet>
+      </af:panelSplitter>
+     </af:form>
+     
+    
+    </af:pageTemplateDef>
+</jsp:root>

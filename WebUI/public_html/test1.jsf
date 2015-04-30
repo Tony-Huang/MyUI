@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="test1.jsf" id="d1" binding="#{backingBeanScope.backing_test1.d1}">
+        <af:form id="f1" binding="#{backingBeanScope.backing_test1.f1}">
+            <af:panelSplitter orientation="horizontal" splitterPosition="100" id="ps1"
+                              binding="#{backingBeanScope.backing_test1.ps1}">
+                <f:facet name="first"/>
+                <f:facet name="second">
+                    <af:panelGridLayout id="pgl1" binding="#{backingBeanScope.backing_test1.pgl1}">
+                        <af:gridRow marginTop="10px" height="auto" id="gr1"
+                                    binding="#{backingBeanScope.backing_test1.gr1}">
+                            <af:gridCell marginStart="10px" width="auto" marginEnd="10px" id="gc1"
+                                         binding="#{backingBeanScope.backing_test1.gc1}">
+                                <af:panelBorderLayout id="pbl1" binding="#{backingBeanScope.backing_test1.pbl1}">
+                                    <f:facet name="start">
+                                        <af:image source="/igms/logo-small.jpg" shortDesc="HaiNa-logo" id="i1"
+                                                  binding="#{backingBeanScope.backing_test1.i1}"/>
+                                          <af:spacer width="20" height="20" id="s1"
+                                               binding="#{backingBeanScope.backing_test1.s1}"/>
+                                    <af:outputLabel value="单锭监测上位机系统" id="ol1"
+                                                    binding="#{backingBeanScope.backing_test1.ol1}"/>
+                                    </f:facet>
+                                  
+                                    <f:facet name="bottom"/>
+                                    <f:facet name="end">
+                                        <af:link text="版本" id="l1" binding="#{backingBeanScope.backing_test1.l1}"/>
+                                        <af:statusIndicator id="si1" binding="#{backingBeanScope.backing_test1.si1}"/>
+                                    </f:facet>
+                                    <f:facet name="top"/>
+                                </af:panelBorderLayout>
+                            </af:gridCell>
+                        </af:gridRow>
+                        <af:gridRow marginTop="20px" height="auto" id="gr2"
+                                    binding="#{backingBeanScope.backing_test1.gr2}">
+                            <af:gridCell marginStart="10px" width="auto" marginEnd="10px" id="gc2"
+                                         binding="#{backingBeanScope.backing_test1.gc2}"/>
+                        </af:gridRow>
+                        <af:gridRow marginTop="20px" height="auto" marginBottom="10px" id="gr3"
+                                    binding="#{backingBeanScope.backing_test1.gr3}">
+                            <af:gridCell marginStart="10px" width="auto" marginEnd="10px" id="gc3"
+                                         binding="#{backingBeanScope.backing_test1.gc3}"/>
+                        </af:gridRow>
+                    </af:panelGridLayout>
+                </f:facet>
+            </af:panelSplitter>
+        </af:form>
+    </af:document>
+    <!--oracle-jdev-comment:auto-binding-backing-bean-name:backing_test1-->
+</f:view>

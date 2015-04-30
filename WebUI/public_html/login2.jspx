@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich" xmlns:c="http://java.sun.com/jsp/jstl/core">
+    <c:set var="webuiBundle1" value="#{adfBundle['com.hdp.smp.front.ui.UIBundle_CN']}"/>
+    <c:set var="webuiBundle" value="#{adfBundle['com.hdp.smp.front.ui.WebUIBundle']}"/>
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <f:view>
+        <af:document title="login2.jspx" id="d1" binding="#{backingBeanScope.backing_login2.d1}">
+            <af:form id="f1" binding="#{backingBeanScope.backing_login2.f1}">
+                <af:panelSplitter orientation="vertical" splitterPosition="113" id="ps2"
+                                  binding="#{backingBeanScope.backing_login2.ps2}">
+                    <f:facet name="first">
+                      
+                        <af:panelStretchLayout id="psl1" binding="#{backingBeanScope.backing_login2.psl1}">
+                            
+                            <f:facet name="center">
+                                <af:panelBorderLayout id="pbl1" binding="#{backingBeanScope.backing_login2.pbl1}">
+                                    <f:facet name="start">
+                                        <af:panelGroupLayout id="pgl1" binding="#{backingBeanScope.backing_login2.pgl1}"
+                                                             halign="left" layout="horizontal">
+                                          <af:image source="/igms/logo-small.jpg" shortDesc="logo" id="i1"
+                                            binding="#{backingBeanScope.backing_login2.i1}"/>
+                                          <af:spacer width="10" height="0" id="s1" binding="#{backingBeanScope.backing_login2.s1}"/>
+                                          <af:outputLabel value="#{webuiBundle1['product.name']}" id="ol1"
+                                              binding="#{backingBeanScope.backing_login2.ol1}"
+                                              inlineStyle="color:Black; font-size:medium; font-weight:normal; text-align:left;"/>
+                                        </af:panelGroupLayout>
+                                
+                              
+                                    </f:facet>
+                                    <af:spacer width="10" height="10" id="s3"
+                                               binding="#{backingBeanScope.backing_login2.s3}"/>
+                                    <f:facet name="end">
+                                        <af:panelGroupLayout id="pgl3"
+                                                             binding="#{backingBeanScope.backing_login2.pgl3}"
+                                                             halign="center" layout="horizontal">
+                                            <af:outputLabel value="about" id="ol3"
+                                                            binding="#{backingBeanScope.backing_login2.ol3}"/>
+                                            <af:spacer width="10" height="0" id="s2"
+                                                       binding="#{backingBeanScope.backing_login2.s2}"/>
+                                            <af:link text="home" id="l1"
+                                                     binding="#{backingBeanScope.backing_login2.l1}"/>
+                                        </af:panelGroupLayout>
+                                    </f:facet>
+                                   
+                                </af:panelBorderLayout>
+                              
+                            </f:facet>
+                            <!--f:facet name="start"/>
+                            <f:facet name="end"/-->
+                          
+                        </af:panelStretchLayout>
+                    </f:facet>
+                    <f:facet name="second">
+                        <af:panelSplitter orientation="vertical" positionedFromEnd="true" splitterPosition="50" id="ps1"
+                                          binding="#{backingBeanScope.backing_login2.ps1}">
+                            <f:facet name="first"/>
+                            <f:facet name="second"/>
+                        </af:panelSplitter>
+                    </f:facet>
+                </af:panelSplitter>
+            </af:form>
+        </af:document>
+    </f:view>
+    <!--oracle-jdev-comment:auto-binding-backing-bean-name:backing_login2-->
+</jsp:root>

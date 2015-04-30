@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <f:view>
+        <af:document title="main" id="d1" binding="#{backingBeanScope.backing_main.d1}">
+            <af:pageTemplate viewId="/templates/templateMain1.jspx" id="pt1">
+                <f:facet name="center1">
+                    <!--af:navigationPane hint="tabs" id="np1" binding="#{backingBeanScope.backing_main.np1}">
+                        <af:commandNavigationItem id="ni1" text="机台班次时间数据对比"
+                                                  binding="#{backingBeanScope.backing_main.ni1}"/>
+                        <af:commandNavigationItem id="ni2" text="不同机台数据对比"
+                                                  binding="#{backingBeanScope.backing_main.ni2}"/>
+                        <af:commandNavigationItem id="ni3" text="机台时间段统计数据"
+                                                  binding="#{backingBeanScope.backing_main.ni3}"/>
+                        <af:commandNavigationItem id="ni4" text="同纱型段断头率对比"
+                                                  binding="#{backingBeanScope.backing_main.ni4}"/>
+                    </af:navigationPane-->
+                    
+                </f:facet>
+                <f:facet name="center2"/>
+            </af:pageTemplate>
+        </af:document>
+    </f:view>
+    <!--oracle-jdev-comment:auto-binding-backing-bean-name:backing_main-->
+</jsp:root>
