@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <f:view>
+        <af:document title="MyTable.jspx" id="d1">
+            <af:form id="f1">
+                <af:panelGridLayout id="pgl1">
+                    <af:gridRow height="50px" id="gr1">
+                        <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc1">
+                            <!-- Header -->
+                        </af:gridCell>
+                    </af:gridRow>
+                    <af:gridRow height="100%" id="gr2">
+                        <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc2">
+                            <!-- Content -->
+                            <af:panelGroupLayout id="pgl2">
+                                <af:outputLabel value="QueryComponentDemo" id="ol1" inlineStyle="font-size:x-large;"/>
+                                <af:query headerText="Search" disclosed="true" id="q1"/>
+                                <af:table value="#{MyTableData.dataCollection}" var="row" rowBandingInterval="0"
+                                          id="t1">
+                                    <af:column sortable="false" headerText="Id" align="end" id="c1">
+                                        <af:outputText value="#{row.id}" id="ot1"/>
+                                    </af:column>
+                                    <af:column sortable="false" headerText="StationNO" align="start" id="c2">
+                                        <af:outputText value="#{row.stationNO}" id="ot2"/>
+                                    </af:column>
+                                    <af:column sortable="false" headerText="Description" align="start" id="c3">
+                                        <af:outputText value="#{row.description}" id="ot3"/>
+                                    </af:column>
+                                    <af:column sortable="false" headerText="StartDate" align="start" id="c4">
+                                        <af:outputText value="#{row.startDate}" id="ot4"/>
+                                    </af:column>
+                                    <af:column sortable="false" headerText="EndDate" align="start" id="c5">
+                                        <af:outputText value="#{row.endDate}" id="ot5"/>
+                                    </af:column>
+                                    <af:column sortable="false" headerText="Avg Speed" align="end" id="c6">
+                                        <af:outputText value="#{row.avgSpeed}" id="ot6"/>
+                                    </af:column>
+                                    <af:column sortable="false" headerText="Kwh" align="end" id="c7">
+                                        <af:outputText value="#{row.kwh}" id="ot7"/>
+                                    </af:column>
+                                    <af:column sortable="false" headerText="IsActive" align="start" id="c8">
+                                        <af:outputText value="#{row.isActive}" id="ot8"/>
+                                    </af:column>
+                                    <af:column sortable="false" headerText="Empty Spindle" align="end" id="c9">
+                                        <af:outputText value="#{row.emptySpindle}" id="ot9"/>
+                                    </af:column>
+                                    <af:column sortable="false" headerText="Broken Spindles" align="end" id="c10">
+                                        <af:outputText value="#{row.brokenSpindles}" id="ot10"/>
+                                    </af:column>
+                                    <af:column sortable="false" headerText="Creep Spindles" align="end" id="c11">
+                                        <af:outputText value="#{row.creepSpindles}" id="ot11"/>
+                                    </af:column>
+                                </af:table>
+                            </af:panelGroupLayout>
+                        </af:gridCell>
+                    </af:gridRow>
+                </af:panelGridLayout>
+            </af:form>
+        </af:document>
+    </f:view>
+</jsp:root>
